@@ -1,0 +1,59 @@
+### signup
+
+POST  http://localhost:3000/v1/api/shop/signup
+Content-Type: application/json
+x-api-key: 7b063d6ec11df173d2c45c6583e47f2fb8997620bfc3493dc9198083850e943702aca5e7c3d4cbfb3ad7eb192340b2366817b8d305a8b4c7cb2e885611fb1e7f
+
+{
+    "name": "Shop quy12",
+    "email": "1212",
+    "password": "18122002"
+}
+
+###
+POST  http://localhost:3000/v1/api/shop/login
+Content-Type: application/json
+x-api-key: 7b063d6ec11df173d2c45c6583e47f2fb8997620bfc3493dc9198083850e943702aca5e7c3d4cbfb3ad7eb192340b2366817b8d305a8b4c7cb2e885611fb1e7f
+
+{
+    "email": "quyquy1234",
+    "password": "18122002"
+}
+
+###
+POST  http://localhost:3000/v1/api/shop/handlerRefreshToken
+Content-Type: application/json
+x-api-key: 64fdadef5cbaa75e4187d0e7a766ffbe9f3558e1dbca0048f86e547acc6ab7153baa1040539f83a9fcd5e9f6b252b691062e9954320d1412ff77f5e639f2f897
+x-client-id : 641ed0639a1e19f0eaacfed9
+refeshToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDFlZDA2MzlhMWUxOWYwZWFhY2ZlZDkiLCJlbWFpbCI6InF1eXF1eTEyMzQiLCJpYXQiOjE2Nzk3NDExODQsImV4cCI6MTY4MDM0NTk4NH0.GckwIPVMZ66OFoCUv9VrDWYk0G-EuiuBlpq-H2m1cVA
+
+
+###
+POST  http://localhost:3000/v1/api/product
+Content-Type: application/json
+x-api-key: 7b063d6ec11df173d2c45c6583e47f2fb8997620bfc3493dc9198083850e943702aca5e7c3d4cbfb3ad7eb192340b2366817b8d305a8b4c7cb2e885611fb1e7f
+x-client-id : 6423a2207893a3410fdf29c1
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDIzYTIyMDc4OTNhMzQxMGZkZjI5YzEiLCJlbWFpbCI6InF1eXF1eTEyMzQiLCJpYXQiOjE2ODAyMzA3NDMsImV4cCI6MTY4MDQwMzU0M30.MmbMnewzhYuDa1ML9JYjent8Y717S228j_aXfn_rit8
+
+{
+    "product_name": "test100",
+    "product_thumb": "123a", 
+    "product_description": "aa",
+    "product_price": 600,
+    "product_type": "Electronics",
+    "product_quantity": 5,
+    "product_attributes": {
+        "manufacturer": "quy",
+        "model": "L",
+        "color": "Denim"
+     }
+          
+
+}
+
+###
+POST  http://localhost:3000/v1/api/shop/logout
+Content-Type: application/json
+x-api-key: 64fdadef5cbaa75e4187d0e7a766ffbe9f3558e1dbca0048f86e547acc6ab7153baa1040539f83a9fcd5e9f6b252b691062e9954320d1412ff77f5e639f2f897
+x-client-id : 641ed0639a1e19f0eaacfed9
+authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDFlZDA2MzlhMWUxOWYwZWFhY2ZlZDkiLCJlbWFpbCI6InF1eXF1eTEyMzQiLCJpYXQiOjE2Nzk3NDEyMDcsImV4cCI6MTY3OTkxNDAwN30.WtBanSzN5MpnFZm8Xt-tAxAOR000vwUR267wlea9L4U
